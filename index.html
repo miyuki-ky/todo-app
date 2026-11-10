@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <!-- スマートフォンで正しく表示するための設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDoリスト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">ToDoリスト</h1>
+
+    <!-- タスク入力フォーム -->
+    <form id="todo-form" class="todo-form">
+      <input
+        type="text"
+        id="todo-input"
+        class="todo-input"
+        placeholder="新しいタスクを入力"
+        autocomplete="off"
+        maxlength="100"
+      >
+      <button type="submit" class="add-button">追加</button>
+    </form>
+
+    <!-- 残りのタスク数を表示 -->
+    <p id="todo-count" class="todo-count"></p>
+
+    <!-- タスク一覧（JavaScriptで中身を作ります） -->
+    <ul id="todo-list" class="todo-list"></ul>
+
+    <!-- タスクが1つもないときに表示するメッセージ -->
+    <p id="empty-message" class="empty-message">タスクはありません</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
